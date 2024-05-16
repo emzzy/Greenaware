@@ -1,0 +1,133 @@
+{% extends 'layout/layout.html' %} {% block content %} {% load static %}
+
+<section class="tf__pricing pt_165">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-8 m-auto">
+        <div class="tf__common_heading">
+          <h6>Register Here to</h6>
+          <h2 class="tf__common_heading_color">Join Us</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row"></div>
+  </div>
+</section>
+
+<section class="auth_from pb_100">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-7 col-lg-6 col-xl-5">
+        <div class="auth_card">
+          <form
+            class="tf__blog_form"
+            action="/register/"
+            method="POST"
+            enctype="application/json"
+          >
+            {% csrf_token %}
+            <div class="row">
+              {% include 'messages.html' %}
+              <div class="col-xl-12">
+                <div class="tf__blog_form_input tf__contact_form_input">
+                  <label>Email or Username (required)</label>
+                  <input
+                    type="email"
+                    name="email_address"
+                    placeholder="Enter Email"
+                  />
+                </div>
+              </div>
+              <div class="col-xl-12">
+                <div class="tf__blog_form_input tf__contact_form_input">
+                  <label>First Name</label>
+                  <input
+                    required
+                    type="text"
+                    name="first_name"
+                    placeholder="First Name"
+                  />
+                </div>
+              </div>
+              <div class="col-xl-12">
+                <div class="tf__blog_form_input tf__contact_form_input">
+                  <label>Last Name</label>
+                  <input
+                    required
+                    type="text"
+                    name="last_name"
+                    placeholder="Last Name"
+                  />
+                </div>
+              </div>
+              <div class="col-xl-12">
+                <div class="tf__blog_form_input tf__contact_form_input">
+                  <label>Password (required)</label>
+                  <input
+                    required
+                    type="password"
+                    name="password"
+                    placeholder="Enter Password"
+                  />
+                </div>
+              </div>
+              <div class="col-xl-12">
+                <div class="row">
+                  <div class="d-flex flex-wrap justify-content-between">
+                    <div class="form-group">
+                      <div class="form-check tf__blog_checkbox">
+                        <input
+                          class="form-check-input"
+                          name="user_role"
+                          type="checkbox"
+                          id="flexCheckDefault2"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault2">
+                          Do you Want to be an observer?
+                        </label>
+                      </div>
+                    </div>
+                    <!-- <a href="#" class="small">Forgot Password?</a> -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-12">
+                <div class="tf__blog_form_input tf__contact_form_input">
+                  <button type="submit" class="tf__common_btn w-100">
+                    Sign in with Contis.ai
+                    <i
+                      class="fa-regular fa-arrow-right-long"
+                      aria-hidden="true"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="col-xl-12">
+                <p
+                  class="or text-center py-3 text-black text-uppercase fw-bold text-dark"
+                >
+                  OR
+                </p>
+              </div>
+
+              <div class="col-xl-12">
+                <div class="tf__blog_form_input tf__contact_form_input">
+                  <button class="tf__common_btn tf__common_btn2 w-100">
+                    Sign in with Google <i class="fa-brands fa-google"></i>
+                  </button>
+                </div>
+                <div class="text-center pt-3">
+                  <span class="me-1">Don't have an account?</span>
+                  <a href="signup.html">Sign up</a>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

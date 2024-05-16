@@ -1,0 +1,33 @@
+{% extends 'layout/layout.html' %} {% block content %} {% load static %}
+
+<section class="tf__pricing pt_165">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-8 m-auto">
+        <div class="tf__common_heading">
+          <h6>Welcome Back!</h6>
+          <h2 class="tf__common_heading_color">Login to countinue</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row"></div>
+  </div>
+</section>
+
+<section class="auth_from pb_100">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-7 col-lg-6 col-xl-5">
+        <div class="auth_card">
+          <form class="tf__blog_form">
+            {% csrf_token %}
+
+            {{registerform.as_p}}
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

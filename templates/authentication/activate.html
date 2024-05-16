@@ -1,0 +1,7 @@
+{% autoescape off %}
+
+hi {{ user.username }}
+
+http://{{ domain }}{% url 'activate-user' uidb64=uid token=token %}
+
+{% endautoescape %}

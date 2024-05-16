@@ -1,0 +1,349 @@
+{% block content %}  {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from contis-ai.vercel.app/signup.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Apr 2024 01:51:06 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <title>Contis - AI Content Writing HTML Template</title>
+    <link rel="icon" type="image/png" href="images/favicon.jpg" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <!--============================
+        PRELOADER START
+    ==============================-->
+    <div class="preloader_container" id="preloader">
+      <div class="spinner"></div>
+    </div>
+    <!--============================
+        PRELOADER END
+    ==============================-->
+    <!--============================
+        TOPBAR START
+    ==============================-->
+    <div class="tf__topbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <p>
+              Checkout our new ai tool features: <a href="#">Upgrade Now</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--============================
+        TOPBAR END
+    ==============================-->
+    <!--============================
+        MAIN MANU START
+    ==============================-->
+    <nav class="navbar navbar-expand-lg tf__main_menu">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Contis.ai</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="far fa-stream menu_icon_bar"></i>
+          <i class="far fa-times close_icon_close"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="features.html">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="use_case.html">use case</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#"
+                >Pages <i class="far fa-plus"></i
+              ></a>
+              <ul class="tf__dropdown">
+                <li><a href="pricing.html">pricing</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="blog_details.html">Blog details</a></li>
+                <li><a href="use_case.html">use case</a></li>
+                <li>
+                  <a href="use-cases-details.html">Case details</a>
+                </li>
+                <li>
+                  <a href="login.html">Login</a>
+                </li>
+                <li>
+                  <a class="active" href="signup.html">Signup</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">contact</a>
+            </li>
+          </ul>
+          <ul class="tf__menu_btn d-flex flex-wrap align-items-center">
+            <li><a href="login.html">Log in</a></li>
+            <li><a href="signup.html" class="tf__menu_2nd_btn">Sign up</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--============================
+        MAIN MANU END
+    ==============================-->
+
+    <!--============================
+        PRICING START
+    ==============================-->
+    <section class="tf__pricing pt_165">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-8 m-auto">
+            <div class="tf__common_heading">
+              <h6>Welcome!</h6>
+              <h2 class="tf__common_heading_color">Create an account</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row"></div>
+      </div>
+    </section>
+    <!--============================
+        PRICING END
+    ==============================-->
+
+    <section class="auth_from pb_100">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-7 col-lg-6 col-xl-5">
+            <div class="auth_card">
+              <form class="tf__blog_form">
+                <div class="row">
+                  <div class="col-xl-12">
+                    <div class="tf__blog_form_input tf__contact_form_input">
+                      <label>Name (required)</label>
+                      <input type="text" placeholder="Enter Name" />
+                    </div>
+                  </div>
+                  <div class="col-xl-12">
+                    <div class="tf__blog_form_input tf__contact_form_input">
+                      <label>Email or Username (required)</label>
+                      <input
+                        type="text"
+                        placeholder="Enter Email or Username"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xl-12">
+                    <div class="tf__blog_form_input tf__contact_form_input">
+                      <label>Password (required)</label>
+                      <input type="password" placeholder="Enter Password" />
+                    </div>
+                  </div>
+                  <div class="col-xl-12">
+                    <div class="row">
+                      <div class="d-flex flex-wrap justify-content-between">
+                        <div class="form-group">
+                          <div class="form-check tf__blog_checkbox">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="flexCheckDefault2"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexCheckDefault2"
+                            >
+                              I accept <a href="#">terms and condition</a>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-12">
+                    <div class="tf__blog_form_input tf__contact_form_input">
+                      <button class="tf__common_btn w-100">
+                        Sign up with Contis.ai
+                        <i
+                          class="fa-regular fa-arrow-right-long"
+                          aria-hidden="true"
+                        ></i>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-12">
+                    <p
+                      class="or text-center py-3 text-black text-uppercase fw-bold text-dark"
+                    >
+                      OR
+                    </p>
+                  </div>
+
+                  <div class="col-xl-12">
+                    <div class="tf__blog_form_input tf__contact_form_input">
+                      <button class="tf__common_btn tf__common_btn2 w-100">
+                        Sign up with Google <i class="fa-brands fa-google"></i>
+                      </button>
+                    </div>
+                    <div class="text-center pt-3">
+                      <span class="me-1">Already have an account ?</span>
+                      <a href="login.html">Login</a>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--============================
+        FOOTER START
+    ==============================-->
+    <section class="tf__footer mt_100">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-2 col-sm-6 col-md-3">
+            <div class="tf__footer_left">
+              <a href="index.html" class="tf__footer_logo">
+                <img
+                  src="images/Logo_1.png"
+                  alt="Contisai"
+                  class="img-fluid w-100"
+                />
+              </a>
+              <div class="tf__footer_icon d-flex flex-wrap align-items-center">
+                <ul class="d-flex flex-wrap">
+                  <li>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-sm-6 col-md-3">
+            <div class="tf__quick_link">
+              <h5>USE CASE</h5>
+              <ul>
+                <li><a href="#">Emails</a></li>
+                <li><a href="#">Social media Ads</a></li>
+                <li><a href="#">Text editing</a></li>
+                <li><a href="#">Copy writing</a></li>
+                <li><a href="#">Creative writing</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-2 col-sm-6 col-md-3">
+            <div class="tf__quick_link tf__quick_link_sm">
+              <h5>solutions</h5>
+              <ul>
+                <li><a href="#">Ecommerce</a></li>
+                <li><a href="#">Blogger/Vlogger</a></li>
+                <li><a href="#">Small business</a></li>
+                <li><a href="#">All solutions</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-2 col-sm-6 col-md-3">
+            <div class="tf__quick_link tf__quick_link_sm">
+              <h5>RESOURCES</h5>
+              <ul>
+                <li><a href="#">Knowledge base</a></li>
+                <li><a href="#">What’s new</a></li>
+                <li><a href="#">Roadmap</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Affiliate program</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-12 mx-auto">
+            <div class="tf__address tf__quick_link_sm tf__address_md">
+              <h5>JOIN COMMUNITY</h5>
+              <div class="tf__footer_singup">
+                <form>
+                  <input type="text" required placeholder="you@domain.com" />
+                  <button class="tf__footer_singup_link bg-transparent">
+                    sing up
+                  </button>
+                </form>
+              </div>
+              <div class="form-check tf__signup_check_area">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  I’m okay with getting emails and having that activity tracked
+                  to improve my experience.
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-12">
+            <div
+              class="tf__copyright d-flex flex-wrap justify-content-between mt_50 mb_30"
+            >
+              <p>
+                © 2023 <a href="#" class="copyright_link">Contis.</a> All rights
+                reserved.
+              </p>
+              <ul class="d-flex flex-wrap">
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--============================
+        FOOTER END
+    ==============================-->
+
+    <!--jquery library js-->
+    <script src="js/plugin.js"></script>
+    <!--main js-->
+    <script src="js/main.js"></script>
+  </body>
+
+<!-- Mirrored from contis-ai.vercel.app/signup.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Apr 2024 01:51:06 GMT -->
+</html>

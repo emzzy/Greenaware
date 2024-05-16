@@ -1,0 +1,24 @@
+{% load static %}
+
+<style>
+  .error-message {
+    color: red;
+  }
+
+  .success-message {
+    color: green;
+  }
+</style>
+
+{% if messages %} {% for message in messages %} {% if message.tags == 'error' %}
+<p style="text-align: center; font-size: 12px" class="error-message">
+  {% elif message.tags == 'success' %}
+</p>
+
+<p class="success-message">{% else %}</p>
+
+<p style="text-align: center; font-size: 12px">
+  {% endif %}
+  <strong>{{ message }}</strong>
+</p>
+{% endfor %} {% endif %}
